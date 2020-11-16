@@ -4,7 +4,9 @@ Simple Docker Container to use ansible. In my case i would like to use it for CI
 
 ## Example
 
-```docker run --rm -v /tmp/example-playbook:/ansible:ro marcvorwerk/docker-ansible:latest ansible-playbook hello_world.yaml´´´
+```
+docker run --rm -v /tmp/example-playbook:/ansible:ro marcvorwerk/docker-ansible:latest ansible-playbook hello_world.yaml
+```
 
 
 Map your Key with the following Option:
