@@ -1,10 +1,10 @@
-FROM python:3.9.0-buster
+FROM python:3.9.13-buster
 
-MAINTAINER Marc Vorwerk <docker@marc-vorwerk.de>
+MAINTAINER Marc Vorwerk <marc+docker@marc-vorwerk.de>
 
-RUN pip install pip --upgrade
-RUN pip install ansible
-RUN pip install ansible-lint junit-xml
+RUN pip3 install pip --upgrade
+RUN pip3 install ansible
+RUN pip3 install ansible-lint junit-xml
 
 RUN apt-get update -y && \
     DEBIAN_FRONTEND=noninteractive \
